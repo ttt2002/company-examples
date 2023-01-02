@@ -1,0 +1,24 @@
+.all{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    padding-left: 100px;
+    justify-content: space-between;
+}
+h1{
+    text-align: center;
+    color: brown;
+}
+h3{
+    text-align: center;
+    color: brown;
+}
+.content input{
+    border: 0;
+    border-bottom:black solid; 
+    position: absolute;
+}
+.content label {
+    position: relative;
+}

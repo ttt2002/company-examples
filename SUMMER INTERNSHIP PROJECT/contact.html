@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .main_menubar
+{
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* background-color: black; */
+	
+}.logo
+{
+	color: white;
+	width: 30%;
+	justify-content: space-between;
+}
+
+.menu
+{
+	color: white;
+	display: flex;
+	/*flex-direction: row;*/
+	justify-content: space-between;
+	width: 50%;
+
+	
+}
+
+a{
+	color: white;
+}
+.menu 
+{
+	list-style: none;
+	justify-content: space-between;
+	display: flex;
+	/*flex-direction: row;*/
+}
+.container
+{
+	background-image: url('/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+          .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #024059;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px 20px;
+    height: 90vh;
+  }
+  .all{
+    display: flex;
+  }
+  .contact h1 {
+    text-align: center;
+    margin: 0px 0px 20px 0px ;
+    color: white;
+    font-size: 70px;
+    animation: scalex 3s infinite;
+  }
+  @keyframes scalex {
+    from {letter-spacing: 10px;}
+    50% {letter-spacing: 30px;}
+    100% {letter-spacing: 10px;}
+  }
+  .cform {
+    padding: 20px;
+  }
+  .cform form{
+    display: flex;
+    flex-direction: column;
+  }
+  .cform form input , textarea{
+    margin: 10px 0px;
+    padding: 10px  20px;
+    width: 90vh;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: red;
+  }
+  .map  iframe{
+    border-radius: 20px;    
+    
+  }
+  .cform button{
+    margin: 10px 0px;
+    padding: 10px  20px;
+    width: 90vh;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  footer{
+    display: flex;
+    height: 30vh;
+    background-color: black;
+    /* align-items: center; */
+    padding: 20px 0px;
+    /* justify-content: center; */
+    color: white;
+  }
+  .links{
+    display: flex;
+    padding: 0px 100px;
+    flex-direction: column;
+
+  }
+  .links a {
+    text-decoration: none;
+    padding: 5px 0px;
+    color: grey;
+  }
+    .links a:hover {
+    text-decoration: underline;
+  }
+  /* .map  iframe{ */
+    /* border-radius: 20px;   */
+	/* height: 30vh; */
+	/* width: 90vh;   */
+    
+  /* } */
+  .social{
+    width: 18vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social a:hover{
+  color: red;
+  }
+
+
+    </style>
+</head>
+<body>
+  <section class="container">
+		
+		<div class="main_menubar">
+		<div class="logo">
+			<h3>TIRTH TRIVEDI</h3>
+		</div>
+		<div class="menu">
+			<li><a href="/index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="blog.html">BLOG</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+
+			<li><a href="contact.html">CONTACT</a></li>
+		</div>
+	</div>
+    <section id="contact" class="contact">
+        <h1>Contact Me</h1>
+        <div class="all">
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58737.06637129256!2d72.50308197122418!3d23.058018018209165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e851a5d3e4e0f%3A0x249acb663e46af9b!2sSoft%20Coding%20Solutions!5e0!3m2!1sen!2sin!4v1655878105466!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="cform">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="">
+                    <label for="name">Email</label>
+                    <input type="text" name="name" id="">
+                    <label for="name">Address</label>
+                    <textarea name="address" id="" cols="30" rows="10"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+      <div class="links">
+          <h1>Quick Links</h1>
+          <a href="/index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="gallery.html">GALLERY</a>
+          <a href="blog.html">BLOG</a>
+          <a href="projects.html">PROJECTS</a>
+
+    <a href="contact.html">CONTACT</a>
+      </div>
+      <div class="links">
+          <h1>Mail Us</h1>
+          <a href="">tirth2062002@gmail.com</a>
+      </div>
+  <!-- <div class="map"> -->
+    <!-- <iframe -->
+      <!-- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58737.06637129256!2d72.50308197122418!3d23.058018018209165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e851a5d3e4e0f%3A0x249acb663e46af9b!2sSoft%20Coding%20Solutions!5e0!3m2!1sen!2sin!4v1655878105466!5m2!1sen!2sin" -->
+       <!-- style="border:0;" allowfullscreen="" loading="lazy" -->
+      <!-- referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+  <!-- </div> -->
+
+  <div class="links">
+    <h1>Our Socials</h1>
+    <div class="social">
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    
+  </div>
+  </footer>
+</body>
+</html>

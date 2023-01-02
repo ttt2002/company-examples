@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Skills</title>
+</head>
+<style>
+    .skill{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        background-color: red;
+
+    }
+
+    .tx {
+        text-align: center;
+    }
+    .sk{
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        text-align: center;
+    }
+    .sk{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.sk:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sk > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.sk .sk-left{
+    left: 0;
+}
+.sk .sk-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.sk .sk-left .sk-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.sk .sk-right{
+    right: 0;
+}
+.sk .sk-right .sk-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.sk .sk-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.sk.blue .sk-bar{
+    border-color: #049dff;
+}
+.sk.blue .sk-left .sk-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.sk.yellow .sk-bar{
+    border-color: #fdba04;
+}
+.sk.yellow .sk-left .sk-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.sk.pink .sk-bar{
+    border-color: #ed687c;
+}
+.sk.pink .sk-left .sk-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+.sk.green .sk-bar{
+    border-color: #1abc9c;
+}
+.sk.green .sk-left .sk-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(1deg);
+        transform: rotate(1deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(26deg);
+        transform: rotate(26deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .sk{ margin-bottom: 20px; }
+}
+
+</style>
+<body>
+    <section class="skill">
+        <div class="tx">
+            <h1>
+                WE GOT SKILLS !
+            </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic deserunt alias unde, quisquam repellat,
+                ipsum, exercitationem vitae itaque ipsa reiciendis odio animi blanditiis.</p>
+        </div>
+        <div class="skillcount">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="sk blue">
+                        <span class="sk-left">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <span class="sk-right">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <div class="sk-value">80%</div>
+                    </div>
+                </div>
+                <!-- opver -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="sk yellow">
+                        <span class="sk-left">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <span class="sk-right">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <div class="sk-value">75%</div>
+                    </div>
+                </div>
+                 <!-- opver -->
+                 <div class="col-md-3 col-sm-6">
+                    <div class="sk pink">
+                        <span class="sk-left">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <span class="sk-right">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <div class="sk-value">55%</div>
+                    </div>
+                </div>
+                 <!-- opver -->
+                 <div class="col-md-3 col-sm-6">
+                    <div class="sk green">
+                        <span class="sk-left">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <span class="sk-right">
+                            <span class="sk-bar"></span>
+                        </span>
+                        <div class="sk-value">55%</div>
+                    </div>
+                </div>
+                 <!-- opver -->
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

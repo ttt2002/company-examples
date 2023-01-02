@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    *{
+        margin: 0;
+    }
+    h1{
+        text-align: center;
+    }
+.container {
+  position: relative;
+  width: 50%;
+ 
+}
+
+.image {
+  display: block;
+  width: 450px;
+  height: 350px;
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #cfe606;
+  opacity: 0;
+  /* overflow: hidden; */
+  width: 450px;
+  height: 350px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 70%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.all{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  object-fit: cover;
+}
+</style>
+</head>
+<body>
+
+<h1>IMAGE GALLERY</h1>
+<div class="all">
+<div class="container">
+  <img src="/img/1.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">FIRST IMAGE</div>
+  </div>
+</div>
+<div class="container">
+    <img src="/img/12.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">SECOND IMAGE</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="/img/15.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">THIRD IMAGE</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="/img/16.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">FOURTH IMAGE</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="/img/18.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">FIFTH IMAGE</div>
+    </div>
+  </div>
+  <div class="container">
+    <img src="/img/8.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">SIXTH IMAGE</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

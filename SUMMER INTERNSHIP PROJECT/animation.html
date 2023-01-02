@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box {
+height: 30vh;
+width: 30vh;
+border: 5px solid yellow;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: green;
+animation-name: animate1;
+animation:  animate1 4s infinite;
+animation-fill-mode: forwards ;
+box-shadow: 10px 10px;
+animation-timing-function: ease-in-out;
+position: relative;
+/* border: solid; */
+ 
+}
+@keyframes animate1{
+    from{ top: 0vh; left: 0vh;}
+
+    25% {
+        top: 0vh; left: 25vh;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 0px;    
+        border-BOTTOM-left-radius: 0px;    
+        border-BOTTOM-right-radius: 0px;
+        background-color: blue;
+        
+    }
+    
+    50% {
+        top: 25vh; left: 25vh;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        border-BOTTOM-left-radius: 0px;    
+        border-BOTTOM-right-radius: 0px;
+        background-color: magenta;    
+    }
+    
+    75% {top: 25vh; left: 00vh;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;    
+        border-BOTTOM-left-radius: 100px;    
+        border-BOTTOM-right-radius: 0px;
+        background-color: cyan;
+    }
+    
+    100% {top: 0vh; left: 00vh;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;    
+        border-BOTTOM-left-radius: 100px;    
+        border-BOTTOM-right-radius: 100px;    
+        background-color: orangered;
+    }
+}
+    </style>
+</head>
+<body bgcolor="grey">
+    <div class="box" >
+<p><b>TIRTH TRIVEDI</b></p>
+    </div>
+</body>
+</html>

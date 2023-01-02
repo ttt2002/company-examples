@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        button{
+            padding: 20px;
+        }
+         img{
+            height: 25vh;
+            /* width: 25vh; */
+        justify-content: left;
+        } 
+    </style>
+</head>
+<body>
+    <h1 id="a1">
+        please turn on
+    </h1>
+    <img src="/OFF.png" id="img">
+</br>
+    <button type="button" onclick="fun()" >ON<s/button>
+        <button type="button" onclick="fun1()" >OFF<s/button>
+    
+    <img src="" alt="">
+    <script>
+        function fun() {
+            document.getElementById('img').src = 'ON.png'
+            document.getElementById('a1').innerHTML = 'THE LIGHT IS TURNED ON'
+
+        }
+        function fun1() {
+            document.getElementById('img').src = 'OFF.png'
+            document.getElementById('a1').innerHTML = 'THE LIGHT IS TURNED OFF'
+            // $('#img').src = 'OFF.png'
+
+            // $('#a1').innerHTML='THE LIGHT IS TURNED OFF'
+        }
+        // document.getElementById(a1).innerHTML="TRIVEDI"
+    </script>
+</body>
+</html>

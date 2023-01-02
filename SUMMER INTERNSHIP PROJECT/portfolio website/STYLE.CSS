@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Rubik+Moonrocks&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+h1{
+    font-family: 'Bebas Neue', cursive;
+}
+.header{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    height: 8vh;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    opacity: 80%;
+    z-index: 10;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    color: white;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    /* list-style: none; */
+}
+.menu a:hover{
+    /* text-decoration: none; */
+    color: rgb(255, 0, 0);
+    /* list-style: none; */
+}
+
+.menu li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container1{
+    background-image: url('/img/jupiter.jpg');
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.kaipan{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.kaipan2{
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid white;
+}
+.kaipan2 h2{
+    padding: 0px 0px 20px 0px;
+    color: white;
+}
+
+.kaipan2 button {
+padding: 10px;
+background-color: white;
+}
+.kaipan2 button:hover{
+    transition:  .2s ease-in;
+    transform: scale(1.2) ;
+}
+.kaipan2 button a{
+    text-decoration: none;
+    color: black;
+}
+.about{
+    display: flex;
+    /* padding: 60px 200px 0px 0px; */
+    padding: 20px 150px ;
+    background-color: red;
+    justify-content: center;
+    color: white;
+}
+.portimg img{
+    height: 60vh;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.portimg img:hover{
+    transition: 0.8s ease-in;
+    cursor: pointer;
+ transform: scale(1.05);
+}
+.myself h1{
+    font-size: 90px;
+}
+.myself h1,  p{
+    margin: 20px;
+    width: 70%;
+
+}
+
+
+
+
+
+.skills1 {
+    color: wheat;
+    padding: 40px;
+    background-color: rgb(49, 49, 255);
+  }
+  .skills1 h1{
+    font-size: 70PX;
+    text-align: center;
+  }
+  .container {
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+  }
+  .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+  }
+  
+  .html {width: 90%; background-color: #04AA6D;position: relative;
+    animation: example 5s infinite;}
+  .css {width: 80%; background-color: #2196F3;position: relative;
+    animation: example1 5s infinite;}
+  .js {width: 65%; background-color: #f44336;position: relative;
+    animation: example2 5s infinite;}
+  .php {width: 60%; background-color: #808080;position: relative;
+    animation: example3 5s infinite;}
+
+  @keyframes example{
+    from {width: 0%;}
+    to {width: 90%;}
+  }
+  @keyframes example1{
+    from {width: 0%;}
+    to {width: 80%;}
+  }
+  @keyframes example2{
+    from {width: 0%;}
+    to {width: 65%;}
+  }
+  @keyframes example3{
+    from {width: 0%;}
+    to {width: 60%;}
+  }
+  .gallery{
+    background-color: black;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .gallery h1 {
+    color: white;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    letter-spacing: 2px;
+    width: 100vh;
+    font-size: 70px;
+    position: relative;
+    animation: mymove 3s infinite;
+  }
+  @keyframes mymove {
+    from { letter-spacing: 3px; left: 0; }
+    to   {  letter-spacing: 22px; left: 320px; }
+    
+  }
+  .images{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex: 45%;
+    justify-content: center;
+    
+  }
+  .images img{
+    border: 2px solid white;
+    height: 40vh;
+    margin: 20px;
+  }
+  .images img:hover{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+   transform: scale(1.1);
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #024059;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px 20px;
+    height: 90vh;
+  }
+  .all{
+    display: flex;
+  }
+  .contact h1 {
+    text-align: center;
+    margin: 0px 0px 20px 0px ;
+    color: white;
+    font-size: 70px;
+    animation: scalex 3s infinite;
+  }
+  @keyframes scalex {
+    from {letter-spacing: 10px;}
+    50% {letter-spacing: 30px;}
+    100% {letter-spacing: 10px;}
+  }
+  .cform {
+    padding: 20px;
+  }
+  .cform form{
+    display: flex;
+    flex-direction: column;
+  }
+  .cform form input , textarea{
+    margin: 10px 0px;
+    padding: 10px  20px;
+    width: 90vh;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: red;
+  }
+  .map  iframe{
+    border-radius: 20px;    
+    
+  }
+  .cform button{
+    margin: 10px 0px;
+    padding: 10px  20px;
+    width: 90vh;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  footer{
+    display: flex;
+    height: 30vh;
+    background-color: rgb(0, 0, 0);
+    /* align-items: center; */
+    padding: 20px 0px;
+    /* justify-content: center; */
+    color: white;
+  }
+  .links{
+    display: flex;
+    padding: 0px 100px;
+    flex-direction: column;
+
+  }
+  .links a {
+    text-decoration: none;
+    padding: 5px 0px;
+    color: grey;
+  }
+    .links a:hover {
+    text-decoration: underline;
+  }
